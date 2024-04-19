@@ -50,7 +50,7 @@
         </div>
         <div class="mb-3">
         <label for="direccion" class="form-label">Dirección</label>
-        <input type="text" required class="form-control" id="direccion" direccion="direccion"
+        <input type="text" required class="form-control" id="direccion" name="direccion"
         placeholder="Direccion cliente" value="{{ $cliente->direccion }}">
         </div>
 

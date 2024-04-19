@@ -29,27 +29,27 @@
         </div>
         <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" required class="form-control" id="nombre" aria-describedby="nameHelp" nombre="nombre"
+        <input type="text" required class="form-control" id="nombre" aria-describedby="nameHelp" name="nombre"
         placeholder="Nombre cliente">
         </div>
         <div class="mb-3">
         <label for="apellido" class="form-label">Apellido</label>
-        <input type="text" required class="form-control" id="apellido" aria-describedby="nameHelp" apellido="apellido"
+        <input type="text" required class="form-control" id="apellido" aria-describedby="nameHelp" name="apellido"
         placeholder="Apellido cliente">
         </div>
         <div class="mb-3">
         <label for="telefono" class="form-label">Telefono</label>
-        <input type="text" required class="form-control" id="telefono" aria-describedby="nameHelp" telefono="telefono"
+        <input type="text" required class="form-control" id="telefono" aria-describedby="nameHelp" name="telefono"
         placeholder="Telefono cliente">
         </div>
         <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="text" required class="form-control" id="email" aria-describedby="nameHelp" email="email"
+        <input type="text" required class="form-control" id="email" aria-describedby="nameHelp" name="email"
         placeholder="Email cliente">
         </div>
         <div class="mb-3">
         <label for="direccion" class="form-label">Dirección</label>
-        <input type="text" required class="form-control" id="direccion" aria-describedby="nameHelp" direccion="direccion"
+        <input type="text" required class="form-control" id="direccion" aria-describedby="nameHelp" name="direccion"
         placeholder="Direccion cliente">
         </div>
         <div class="mt-3">
