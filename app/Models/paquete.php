@@ -9,5 +9,12 @@ class paquete extends Model
 {
     use HasFactory;
     protected $table = 'paquetes';
-
+    
+    protected function casts(): array
+    {
+        return[
+            'destino'=>'string', 'incluye'=>'string',
+            'descripcion'=>'string',
+    ];
+    }
 }

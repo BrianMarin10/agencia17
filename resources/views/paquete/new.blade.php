@@ -25,7 +25,7 @@
             <form method="POST" action="{{ route('paquetes.store') }}">
                 @csrf
                 <div class="mb-3">
-                    <label for="id" class="form-label">ID Paquete</label>
+                    <label for="id" class="form-label">Codigo</label>
                     <input type="text" class="form-control" id="id" aria-describedby="idHelp" name="id"
                         disabled="disabled">
                     <div id="idHelp" class="form-text">ID Paquete</div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="mt-3">
                     <button type="submit" class="btn btn-primary">Guardar</button>
-                    <a href="{{ route('clientes.index') }}" class="btn btn-warning">Cancelar</a>
+                    <a href="{{ route('paquetes.index') }}" class="btn btn-warning">Cancelar</a>
                 </div>
             </form>
         </div>
