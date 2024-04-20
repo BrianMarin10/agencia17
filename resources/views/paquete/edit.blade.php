@@ -42,13 +42,13 @@
                         placeholder="Descripcion destino" value="{{ $paquete->descripcion }}">
                 </div>
                 <div class="mb-3">
-                    <label for="duracion" class="form-label">Duración</label>
-                    <input type="text" required class="form-control" id="duracion" name="duracion"
+                    <label for="duracion" class="form-label">Duración (# Noches)</label>
+                    <input type="number" required class="form-control" id="duracion" name="duracion"
                         placeholder="Duracion paquete" value="{{ $paquete->duracion }}">
                 </div>
                 <div class="mb-3">
                     <label for="precio" class="form-label">Precio</label>
-                    <input type="text" required class="form-control" id="precio" name="precio"
+                    <input type="number" required class="form-control" id="precio" name="precio"
                         placeholder="Precio Paquete" value="{{ $paquete->precio }}">
                 </div>
                 <div class="mb-3">
@@ -59,7 +59,7 @@
 
                 <div class="mt-3">
                     <button type="submit" class="btn btn-primary">Actualizar</button>
-                    <a href="{{ route('clientes.index') }}" class="btn btn-warning">Cancelar</a>
+                    <a href="{{ route('paquetes.index') }}" class="btn btn-warning">Cancelar</a>
                 </div>
             </form>
         </div>

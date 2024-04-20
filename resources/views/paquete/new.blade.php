@@ -41,13 +41,13 @@
                         name="descripcion" placeholder="Descripcion destino">
                 </div>
                 <div class="mb-3">
-                    <label for="duracion" class="form-label">Duración</label>
-                    <input type="text" required class="form-control" id="duracion" aria-describedby="nameHelp"
+                    <label for="duracion" class="form-label">Duración (# Noches)</label>
+                    <input type="number" required class="form-control" id="duracion" aria-describedby="nameHelp"
                         name="duracion" placeholder="Duración paquete">
                 </div>
                 <div class="mb-3">
                     <label for="precio" class="form-label">Precio</label>
-                    <input type="text" required class="form-control" id="precio" aria-describedby="nameHelp"
+                    <input type="number" required class="form-control" id="precio" aria-describedby="nameHelp"
                         name="precio" placeholder="Precio del paquete">
                 </div>
                 <div class="mb-3">
