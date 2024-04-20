@@ -39,12 +39,12 @@
         </div>
         <div class="mb-3">
         <label for="telefono" class="form-label">Telefono</label>
-        <input type="text" required class="form-control" id="telefono" aria-describedby="nameHelp" name="telefono"
+        <input type="number" required class="form-control" id="telefono" aria-describedby="nameHelp" name="telefono"
         placeholder="Telefono cliente">
         </div>
         <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="text" required class="form-control" id="email" aria-describedby="nameHelp" name="email"
+        <input type="email" required class="form-control" id="email" aria-describedby="nameHelp" name="email"
         placeholder="Email cliente">
         </div>
         <div class="mb-3">
