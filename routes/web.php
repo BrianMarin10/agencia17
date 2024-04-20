@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ReservaController;
 use App\Http\Controllers\PaqueteController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ProfileController;
@@ -32,6 +33,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/paquetes/{paquete}', [PaqueteController::class, 'destroy'])->name('paquetes.destroy');
     Route::put('/paquetes/{paquete}', [PaqueteController::class, 'update'])->name('paquetes.update');
     Route::get('/paquetes/{paquete}/edit', [PaqueteController::class, 'edit'])->name('paquetes.edit');
+    // Rutas de reservas
+    Route::get('/reservas', [ReservaController::class, 'index'])->name('reservas.index');
+    Route::post('/reservas', [ReservaController::class, 'store'])->name('reservas.store');
+    Route::get('/reservas/create', [ReservaController::class, 'create'])->name('reservas.create');
+    Route::delete('/reservas/{reserva}', [ReservaController::class, 'destroy'])->name('reservas.destroy');
+    Route::put('/reservas/{reserva}', [ReservaController::class, 'update'])->name('reservas.update');
+    Route::get('/reservas/{reserva}/edit', [ReservaController::class, 'edit'])->name('reservas.edit');
 });
 
 require __DIR__ . '/auth.php';
