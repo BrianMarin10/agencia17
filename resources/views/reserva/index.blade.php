@@ -45,6 +45,14 @@
             <td>{{ $reserva->fecha_reserva }}</td>
             <td>{{ $reserva->fecha_salida }}</td>
             <td>
+                <a href="{{route('reservas.edit', ['reserva'=>$reserva->id])}}"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Editar </a> </li>
+              <form action="{{ route('reservas.destroy', ['reserva'=>$reserva->id]) }}"
+              method="POST" style="display:inline-block">
+              @method('delete')
+              @csrf
+              <input class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2" type="submit" value="Delete">
+              </form>
               </td>
                                 </tr>
                             @endforeach

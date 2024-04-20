@@ -68,11 +68,11 @@ class ReservaController extends Controller
     {
         $reserva= Reserva::find($id);
         $clientes = DB::table('clientes')
-        ->orderBy('id')
+        ->orderBy('nombre')
         ->get();
 
         $paquetes = DB::table('paquetes')
-        ->orderBy('id')
+        ->orderBy('destino')
         ->get();
         return view('reserva.edit', ['reserva' => $reserva, 'clientes' => $clientes, 'paquetes' => $paquetes]);
     }
@@ -80,8 +80,13 @@ class ReservaController extends Controller
     public function update(Request $request, $id)
     {
         $reserva= Reserva::find($id);
-        //$reserva->pais_nomb = $request->name;
-        //$reserva->pais_capi = $request->code;
+
+        $reserva->cliente_id = $request->nombre;
+        $reserva->paquete_id = $request->destino;
+        $reserva->fecha_reserva = $request->fecha1;
+        $reserva->fecha_salida = $request->fecha2;
+        $reserva->cantidad_personas = $request->cantidad;
+        $reserva->comentarios = $request->comentarios;
         $reserva->save();
         $reservas = DB::table('reservas')
             ->join('clientes', 'reservas.cliente_id', '=', 'clientes.id')
