@@ -40,7 +40,7 @@
         <div class="mb-3">
         <label for="telefono" class="form-label">Telefono</label>
         <input type="number" required class="form-control" id="telefono" aria-describedby="nameHelp" name="telefono"
-        placeholder="Telefono cliente">
+        placeholder="Telefono cliente" min="1" max="2147483647" >
         </div>
         <div class="mb-3">
         <label for="email" class="form-label">Email</label>

@@ -43,8 +43,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Telefono</label>
-                    <input type="text" required class="form-control" id="telefono" name="telefono"
-                        placeholder="Telefono cliente" value="{{ $cliente->telefono }}">
+                    <input type="number" required class="form-control" id="telefono" name="telefono"
+                        placeholder="Telefono cliente" min="1" max="2147483647" value="{{ $cliente->telefono }}">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>

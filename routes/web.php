@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/paquetes/{paquete}', [PaqueteController::class, 'destroy'])->name('paquetes.destroy');
     Route::put('/paquetes/{paquete}', [PaqueteController::class, 'update'])->name('paquetes.update');
     Route::get('/paquetes/{paquete}/edit', [PaqueteController::class, 'edit'])->name('paquetes.edit');
+
     // Rutas de reservas
     Route::get('/reservas', [ReservaController::class, 'index'])->name('reservas.index');
     Route::post('/reservas', [ReservaController::class, 'store'])->name('reservas.store');

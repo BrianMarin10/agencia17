@@ -49,19 +49,21 @@
                                         <td>{{ $paquete->precio }}</td>
                                         <td>{{ $paquete->incluye }}</td>
                                         <td>
-                                            <a href="{{ route('paquetes.edit', ['paquete' => $paquete->id]) }}"
-                                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                                Editar </a></li>
+                                            <div class="btn-group" role="group">
+                                                <a href="{{ route('paquetes.edit', ['paquete' => $paquete->id]) }}"
+                                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                                    Editar </a></li>
 
-                                            <form
-                                                action="{{ route('paquetes.destroy', ['paquete' => $paquete->id]) }}"
-                                                method='POST' style="display: inline-block">
-                                                @method('delete')
-                                                @csrf
-                                                <input
-                                                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
-                                                    type="submit" value="Borrar">
-                                            </form>
+                                                <form
+                                                    action="{{ route('paquetes.destroy', ['paquete' => $paquete->id]) }}"
+                                                    method='POST' style="display: inline-block">
+                                                    @method('delete')
+                                                    @csrf
+                                                    <input
+                                                        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
+                                                        type="submit" value="Borrar">
+                                                </form>
+                                            </div>
                                         </td>
                                     </tr>
                                 @endforeach
