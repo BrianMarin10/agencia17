@@ -52,7 +52,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="incluye" class="form-label">Inluido en el paquete</label>
-                    <input type="text" required class="form-control" id="incluye" aria-describedby="nameHelp"
+                    <input type="hidden" required class="form-control" id="incluye" aria-describedby="nameHelp"
                         name="incluye" value="Alojamiento">
                 </div>
 
