@@ -27,6 +27,9 @@
                     <div class="p-6 text-gray-900">
                         <a href="{{ route('paquetes.create') }}"
                             class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded ml-2">Crear</a>
+                        @if ($error ?? '')
+                            <div class="alert alert-danger">{{ $error }}</div>
+                        @endif
                         <table class="table">
                             <thead>
                                 <tr>
@@ -57,11 +60,11 @@
                                                 <form
                                                     action="{{ route('paquetes.destroy', ['paquete' => $paquete->id]) }}"
                                                     method='POST' style="display: inline-block">
-                                                    @method('delete')
                                                     @csrf
+                                                    @method('DELETE')
                                                     <input
                                                         class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
-                                                        type="submit" value="Borrar">
+                                                        type="submit" value="Eliminar">
                                                 </form>
                                             </div>
                                         </td>

@@ -52,7 +52,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="incluye" class="form-label">Inluido en el paquete</label>
-                    <input type="hidden" required class="form-control" id="incluye" aria-describedby="nameHelp"
+                    <input type="text" required class="form-control" id="incluye" aria-describedby="nameHelp"
                         name="incluye" value="Alojamiento">
                 </div>
 
@@ -78,7 +78,7 @@
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Alimentacion" id="alimentacion"
+                    <input class="form-check-input" type="checkbox" value="Alimentación" id="alimentacion"
                         onclick="guardarCheckbox()">
                     <label class="form-check-label" for="alimentacion">
                         Alimentación

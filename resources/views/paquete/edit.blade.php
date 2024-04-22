@@ -22,7 +22,7 @@
         </x-slot>
         <div class="container">
             <h1>Editar Paquete Turistico</h1>
-            <form method="POST" action="{{ route('paquetes.update', ['paquete' => $paquete->id]) }}">
+            <form method="POST" action="{{ route('paquetes.update', ['paquete' => $paquete->id]) }}" onsubmit="return validarFormulario()">
                 @method('put')
                 @csrf
                 <div class="mb-3">
@@ -92,7 +92,7 @@
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Alimentacion" id="alimentacion"
+                    <input class="form-check-input" type="checkbox" value="Alimentación" id="alimentacion"
                         onclick="guardarCheckbox()" {{ $che_alim }}>
                     <label class="form-check-label" for="alimentacion">
                         Alimentación
