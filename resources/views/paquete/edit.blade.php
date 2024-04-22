@@ -67,6 +67,7 @@
                 $che_tras = strpos($incluye, 'Transporte Aeropuerto') !== false ? 'checked' : '';
                 $che_alim = strpos($incluye, 'Alimentacion') !== false ? 'checked' : '';
                 $che_tour = strpos($incluye, 'Toures') !== false ? 'checked' : '';
+
                 ?>
 
                 <div class="form-check">
