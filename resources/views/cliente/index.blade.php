@@ -29,6 +29,9 @@
                             <a href="{{ route('clientes.create') }}"
                                 class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded ml-2">Agregar
                                 cliente</a>
+                            @if ($error ?? '')
+                                <div class="alert alert-danger">{{ $error }}</div>
+                            @endif
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -52,7 +55,7 @@
                                                 <div class="btn-group" role="group">
                                                     <a href="{{ route('clientes.edit', ['cliente' => $cliente->id]) }}"
                                                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                                        Editar cliente </a></li>
+                                                        Editar</a></li>
 
 
                                                     <form
@@ -62,7 +65,7 @@
                                                         @csrf
                                                         <input
                                                             class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
-                                                            type="submit" value="Delete">
+                                                            type="submit" value="Eliminar">
                                                     </form>
                                                 </div>
                                             </td>
@@ -75,3 +78,4 @@
                 </div>
             </div>
     </x-app-layout>
+</body>

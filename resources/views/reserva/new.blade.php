@@ -32,10 +32,10 @@
             <option selected disabled value="">Elegir uno...</option>
             @foreach ($clientes as $cliente)
                 <option value="{{ $cliente->id }}">{{ $cliente->nombre }}</option>
-                
+
             @endforeach
         </select>
-        
+
         <label for="destino">Destino</label>
         <select class="form-select" id="destino" name="destino" required>
             <option selected disabled value="">Elegir uno...</option>
@@ -61,7 +61,7 @@
         </div>
         <div class="mb-3">
         <label for="comentarios" class="form-label">Comentarios</label>
-        <input type="text" required class="form-control" id="comentarios" aria-describedby="nameHelp" name="comentarios"
+        <input type="text" class="form-control" id="comentarios" aria-describedby="nameHelp" name="comentarios"
         placeholder="Comentarios">
         </div>
 

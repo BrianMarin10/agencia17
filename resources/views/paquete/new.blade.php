@@ -71,14 +71,14 @@
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Trasporte Aeropueto" id="trasporte"
+                    <input class="form-check-input" type="checkbox" value="Transporte Aeropuerto" id="trasporte"
                         onclick="guardarCheckbox()">
                     <label class="form-check-label" for="trasporte">
                         Transporte Aeropuerto
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Alimentacion" id="alimentacion"
+                    <input class="form-check-input" type="checkbox" value="Alimentación" id="alimentacion"
                         onclick="guardarCheckbox()">
                     <label class="form-check-label" for="alimentacion">
                         Alimentación

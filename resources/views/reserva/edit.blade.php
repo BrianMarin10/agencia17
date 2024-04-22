@@ -68,7 +68,7 @@
         </div>
         <div class="mb-3">
         <label for="comentarios" class="form-label">Comentarios</label>
-        <input type="text" required class="form-control" id="comentarios"  name="comentarios"
+        <input type="text" class="form-control" id="comentarios"  name="comentarios"
         value="{{ $reserva->comentarios }}">
         </div>
 
