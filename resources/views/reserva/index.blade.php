@@ -60,7 +60,7 @@
                                                         @csrf
                                                         <input
                                                             class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
-                                                            type="submit" value="Delete">
+                                                            type="submit" value="Eliminar">
                                                     </form>
                                                 </div>
                                             </td>
